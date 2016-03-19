@@ -1,0 +1,21 @@
+\documentclass[11pt, oneside]{report}   	
+\usepackage{geometry}                		
+\geometry{letterpaper}                   		
+\usepackage{graphicx}												\usepackage{amssymb}
+
+
+\title{Comparison of  Optimization Algorithms}
+\author{Adam Wendler}
+\date{March 18, 2015}							
+
+
+\begin{document}
+\maketitle
+
+\section{Accuracy}
+ I found that every search algorithm was able to return (0,0) as the minimum value of the give value. Viewing the graphs, Simulated Annealing would likely be the best approximation, but it seemed just as affective as the other algorithms in practice.  Implementing non-infinite loops does not seem to affect the accuracy.  I assume this has more to do with the nature of the data space then the algorithms themselves.  
+
+\section{Speed}
+ Hill Climbing took the least amount of time on average to complete.  It was most clearly affected by it's starting position.  When starting near the minimum, it predictably took very little time to complete.  Hill Climbing with Random Restarts generally took the longest amount of time, as it had to complete several Hill Climbing Operations.  It would likely take more or less time based on how many restarts are requested.  Simulated Annealing took significantly less time than Random Restarts, however it still needed more time then standard Hill Climbing, as it needs to complete several steps of potential randomization before it can reach the minimum.
+ 
+ \end{document}  
